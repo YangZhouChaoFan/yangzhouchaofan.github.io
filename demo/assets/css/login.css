@@ -1,0 +1,74 @@
+html, body {
+    width: 100%;
+    min-width: 1200px;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: url("../img/download_bg.png")  no-repeat fixed;
+    background-size: cover;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+}
+
+.login-btn {
+    border: 0;
+    width: 66px;
+    height: 25px;
+    outline: none;
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+    background: #ffffff url("../img/common_downloadpage_button_login_nor.png");
+}
+
+.login-btn:hover {
+    background-image: url("../img/common_downloadpage_button_login_press.png");
+}
+
+.info-tip {
+    position: absolute;
+    top: 180px;
+    left: 680px;
+}
+
+.info-tip p {
+    font-family: 'Microsoft YaHei';
+    font-size: 13px;
+    color: #ffffff;
+}
+
+.qr-code {
+    background: url("../img/common_tab_anddroid.png") no-repeat;
+    width: 279px;
+    height: 300px;
+    cursor: pointer;
+}
+
+.qr-code img {
+    margin-top: 50px;
+    margin-left: 15px;
+    width: 250px;
+}
+
+.login-form {
+    background: url("../img/common_login_bg.png") no-repeat;
+    width: 392px;
+    height: 309px;
+    top: 230px;
+    /*left: calc(50% - 196px);*/
+    left: 40%;
+    z-index: 1000;
+    display: none;
+    position: absolute;
+}
+
