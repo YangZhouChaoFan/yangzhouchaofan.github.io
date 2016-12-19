@@ -38,12 +38,13 @@ body {
 }
 
 .marry-bg{
+    width: 440px;
     text-align: center;
     margin: 100px auto auto;
 }
 
-.marry-bg img{
-    width: 60%;
+.marry-bg>div{
+   margin: auto;
 }
 
 .heart3d [class^="rib"] {
