@@ -11,15 +11,6 @@ body {
     box-sizing: border-box;
 }
 
-.marry-bg{
-    position: absolute;
-    width: 50%;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-}
-
 .marry{
     position: absolute;
     height: 80%;
@@ -31,11 +22,6 @@ body {
     margin: auto;
 }
 
-.marry-text {
-    text-align: center;
-    margin: 100px auto auto;
-}
-
 .heart3d {
     margin: auto;
     width: 100px;
@@ -44,6 +30,20 @@ body {
     transform-style: preserve-3d;
     -webkit-animation: spin 15s infinite linear;
     animation: spin 15s infinite linear;
+}
+
+.marry-text {
+    text-align: center;
+    margin: 100px auto auto;
+}
+
+.marry-bg{
+    text-align: center;
+    margin: 100px auto auto;
+}
+
+.marry-bg img{
+    width: 60%;
 }
 
 .heart3d [class^="rib"] {
