@@ -14,7 +14,7 @@ body {
 
 .marry{
     position: absolute;
-    height: 50%;
+    height: 80%;
     width: 100%;
     top: 0;
     right: 0;
@@ -24,8 +24,8 @@ body {
 }
 
 .marry-text {
-    margin: auto;
     text-align: center;
+    margin: 100px auto auto;
 }
 
 .heart3d {
