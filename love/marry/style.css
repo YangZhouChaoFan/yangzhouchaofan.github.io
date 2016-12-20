@@ -3,6 +3,7 @@ body {
     height: 100%;
     width: 100%;
     background: #ffe;
+    overflow: hidden;
 }
 
 * {
@@ -22,15 +23,21 @@ body {
     margin: auto;
 }
 
+.marry-logo {
+    text-align: center;
+    margin: auto;
+}
+
 .marry-text {
     text-align: center;
     margin: auto;
+    margin-top: 100px;
 }
 
 .marry-bg {
     width: 600px;
     text-align: center;
-    margin: 100px auto;
+    margin: 50px auto;
 }
 
 .musicButton {
@@ -54,4 +61,16 @@ body {
     100% {
         -webkit-transform: rotate(360deg);
     }
+}
+
+.marry-foot {
+    margin: auto;
+    text-align: center;
+}
+
+.marry-foot > div {
+    margin: auto;
+    text-align: center;
+    width: 300px;
+    height: auto;
 }
