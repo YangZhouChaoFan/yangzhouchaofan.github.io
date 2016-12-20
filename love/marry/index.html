@@ -5,6 +5,7 @@
     <meta charset='utf-8'>
     <meta name="sharecontent" data-msg-content="欢迎~">
     <link rel="stylesheet" href="style.css" media="screen" type="text/css"/>
+    <link href="http://libs.baidu.com/fontawesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 </head>
 <body>
 
@@ -15,7 +16,7 @@
 <div class="marry">
 
     <div class="marry-text">
-        <h1>陈浩&丁珂（婚宴）</h1>
+        <h1>陈浩&丁珂（婚宴）<i id="musicButton" class="fa fa-music musicButton" style="color: red"></i></h1>
         <h2>酒店：扬州绿地福朋喜来登酒店（三楼福朋宴会厅）</h2>
         <h2>地址：江苏省扬州市邗江区江阳西路109号</h2>
         <h2>日期：2017年1月15日（晚上6点）</h2>
@@ -39,16 +40,26 @@
 <script src="turn.js"></script>
 <script>
 
-    $(function () {
-        $('.marry-bg>div').turn({
-            display: "single",
-            width: 600,
-            height: 762,
-            autoCenter: true,
-            shadows: $.isTouch,
-            acceleration: $.isTouch,
-        });
-    })
+    $("#musicButton").click(function () {
+        $(this).toggleClass("musicButton");
+        var audio = document.getElementById('bg-music');
+        if (audio !== null) {
+            if (audio.paused) {
+                audio.play();// 这个就是播放
+            } else {
+                audio.pause();// 这个就是暂停
+            }
+        }
+    });
+
+    $('.marry-bg>div').turn({
+        display: "single",
+        width: 600,
+        height: 762,
+        autoCenter: true,
+        shadows: $.isTouch,
+        acceleration: $.isTouch,
+    });
 
     document.addEventListener('DOMContentLoaded', function () {
         function audioAutoPlay() {
@@ -82,6 +93,7 @@
 
         document.addEventListener('DOMContentLoaded', musicInWeixinHandler);
     }
+
     function musicPlay(isPlay) {
         var media = document.querySelector('#bg-music');
         if (isPlay && media.paused) {
