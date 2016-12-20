@@ -3,6 +3,7 @@ body {
     height: 100%;
     width: 100%;
     background: #ffe;
+    overflow-x: hidden;
 }
 
 * {
@@ -29,8 +30,7 @@ body {
 
 .marry-text {
     text-align: center;
-    margin: auto;
-    margin-top: 100px;
+    margin: 100px auto auto;
 }
 
 .marry-bg {
